@@ -2,10 +2,10 @@
 
 class Database {
 
-    private $hostname = "localhost";
-    private $database = "tienda_online";
-    private $username = "root";
-    private $password = "";
+    private $hostname = "us-cdbr-east-06.cleardb.net";
+    private $database = "heroku_e636b290235b28a";
+    private $username = "bb328a19db9945";
+    private $password = "9ce3221c";
     private $charset = "utf8";
 
     function conectar() {
