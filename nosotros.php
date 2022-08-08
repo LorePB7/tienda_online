@@ -47,12 +47,16 @@ require 'config/database.php';
    </div>
   </header>
 
+    <!--Contenido-->
+
   <main>
-    <div class="container">
+    <div class="container min-vh-100">
       <div class="row border rounded border-dark" style="background-color: #bbb">
           <div class="col">
       <h2 class="text-center"><b>¿QUIENES SOMOS?</b></h2>
       <p class="text-center"><b>Eyeblack Store nace como un pequeño emprendimiento dedicado a la comercialización de indumentaria americana de alta calidad, brindándole a nuestros clientes una gran variedad de productos de las mejores ligas deportivas de Estados Unidos, tales como la NBA, MLB, NHL y NFL.</b></p>
+      <br>
+      <p class="text-center"><b>Podes contactarnos a través de nuestro GMAIL: eyeblackstore@gmail.com o a través de nuestro <a href="https://www.instagram.com/eyeblackstore/?hl=es-la">INSTAGRAM</a></b></p>
           </div>
       </div>
     </div>
@@ -61,24 +65,24 @@ require 'config/database.php';
 
       <!-- Footer -->
   
-  <footer class="bg-dark text-white fixed-bottom">
+  <footer class="bg-dark text-white">
       <div class="container">
-          <nav class="row">
+          <nav class="row align-items-center">
               <!--Logo-->
-              <a href="index.php" class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <a href="index.php" class="col-sm-8 col-md-6 col-lg-3 col-xl-3 text-reset text-uppercase d-flex align-items-center">
               <img class="img-logo mr-2" src="images/logo_eyeblack.png" alt="Logo Eyeblack" height="90">
               Eyeblack Store
               </a>
               <!--Copyright-->
-              <a class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <a class="col-sm-8 col-md-6 col-lg-3 col-xl-3 text-reset text-uppercase d-flex align-items-center">
               Copyright Eyeblack Store - 2022. All rights reserved.
               </a>
               <!--Copyright-->
-              <a class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <a class="col-sm-8 col-md-6 col-lg-3 col-xl-3 text-reset text-uppercase d-flex align-items-center">
               Created by Lorenzo Píccolo
               </a>
               <!--Redes-->
-              <a href="https://www.instagram.com/eyeblackstore/?hl=es-la" class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <a href="https://www.instagram.com/eyeblackstore/?hl=es-la" class="col-sm-8 col-md-6 col-lg-3 col-xl-3 text-reset text-uppercase d-flex align-items-center">
               Instagram
               </a>
           </nav>

@@ -59,10 +59,10 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
   <!--Contenido-->
   <main>
-   <div class="container">
+   <div class="container min-vh-100">
    <div class="row">
       <?php foreach ($resultado as $row) { ?>
-        <div class="col-3">
+        <div class="col-sm-8 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
                 <?php
                 $id = $row['id'];
@@ -122,24 +122,24 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
       <!-- Footer -->
   
-  <footer class="bg-dark text-white fixed-bottom">
+  <footer class="bg-dark text-white">
       <div class="container">
-          <nav class="row">
+          <nav class="row align-items-center">
               <!--Logo-->
-              <a href="index.php" class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <a href="index.php" class="col-sm-8 col-md-6 col-lg-3 col-xl-3 text-reset text-uppercase d-flex align-items-center">
               <img class="img-logo mr-2" src="images/logo_eyeblack.png" alt="Logo Eyeblack" height="90">
               Eyeblack Store
               </a>
               <!--Copyright-->
-              <a class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <a class="col-sm-8 col-md-6 col-lg-3 col-xl-3 text-reset text-uppercase d-flex align-items-center">
               Copyright Eyeblack Store - 2022. All rights reserved.
               </a>
               <!--Copyright-->
-              <a class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <a class="col-sm-8 col-md-6 col-lg-3 col-xl-3 text-reset text-uppercase d-flex align-items-center">
               Created by Lorenzo Píccolo
               </a>
               <!--Redes-->
-              <a href="https://www.instagram.com/eyeblackstore/?hl=es-la" class="col-3 text-reset text-uppercase d-flex align-items-center">
+              <a href="https://www.instagram.com/eyeblackstore/?hl=es-la" class="col-sm-8 col-md-6 col-lg-3 col-xl-3 text-reset text-uppercase d-flex align-items-center">
               Instagram
               </a>
           </nav>
