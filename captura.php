@@ -1,3 +1,8 @@
+<?php 
+require 'config/config.php';
+require 'config/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +10,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datos de compra</title>
+  <!--Boostrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/main.scss" rel="stylesheet">
 </head>
 <body>
+  <!--Barra de navegación-->
+  <header>
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+       <a href="index.php" class="navbar-brand">
+         <img class="logotipo" src="images/logo_eyeblack.png" width="auto" height="80" alt="Logo Eyeblack">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarHeader">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="index.php" class="nav-link active">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                  <a href="nosotros.php" class="nav-link">Nosotros</a>
+                </li>
+            </ul>
+            <a href="checkout.php" class="btn btn-primary">
+              Carrito<span id="num_cart" class="badge bg-secondary"><?php echo $num_cart; ?></span>
+            </a>
+        </div>
+      </div>
+   </div>
+  </header>
   
 <?php 
-
-require 'config/config.php';
-require 'config/database.php';
 $db = new Database();
 $con = $db->conectar();
 
