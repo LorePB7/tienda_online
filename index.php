@@ -120,7 +120,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 </body>
 
-      <!-- Footer -->
+  <!-- Footer -->
   
   <footer class="bg-dark text-white">
       <div class="container">
