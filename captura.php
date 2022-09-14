@@ -85,7 +85,5 @@ unset($_SESSION['carrito']);
 
 ?>
 
-<button class="btn btn-success" type="button" onclick="window.print()">Imprimir</button>
-
 </body>
 </html>
